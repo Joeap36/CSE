@@ -25,7 +25,6 @@ def main():
     if turns_used == 5:
         print("Game Over")
     next_game = input("Play again?")
-    
 
 
 main()
