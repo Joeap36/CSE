@@ -18,17 +18,18 @@
     <session id="-667066214">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,13 +45,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="5716" />
+          <entry key="py" value="6024" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="5716" />
+          <entry key="Python" value="6024" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -81,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/Joseph Portela - Guess Game.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -89,11 +90,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Joseph Portela - Lucky 7s.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="493">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <marker date="1541698987082" expanded="true" signature="54:55" ph="..." />
-                <marker date="1541698987082" expanded="true" signature="115:116" ph="..." />
+                <marker date="1541788532825" expanded="true" signature="54:55" ph="..." />
+                <marker date="1541788532825" expanded="true" signature="115:116" ph="..." />
               </folding>
             </state>
           </provider>
@@ -129,7 +130,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -292,8 +293,8 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49016392" visible="true" weight="0.28441754" />
-      <window_info id="Structure" order="1" sideWeight="0.5098361" side_tool="true" visible="true" weight="0.28441754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4885246" visible="true" weight="0.28895614" />
+      <window_info id="Structure" order="1" sideWeight="0.5114754" side_tool="true" visible="true" weight="0.28895614" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.2677761" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -332,7 +333,7 @@
     <entry file="file://$PROJECT_DIR$/Joseph Portela - Guess Game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -351,11 +352,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Joseph Portela - Lucky 7s.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <marker date="1541698987082" expanded="true" signature="54:55" ph="..." />
-            <marker date="1541698987082" expanded="true" signature="115:116" ph="..." />
+            <marker date="1541788532825" expanded="true" signature="54:55" ph="..." />
+            <marker date="1541788532825" expanded="true" signature="115:116" ph="..." />
           </folding>
         </state>
       </provider>

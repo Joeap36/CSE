@@ -22,3 +22,8 @@ if total <= 0:
     print("You're bankrupt. You go home, tell your spouse and kids, and you live in poverty for the rest of your life.")
     print()
     print("Congratulations!")
+    print("You could've stopped when you had $%d, but noooOOOooo." % 15)
+    print("You just had to keep going for, let me check...")
+    print("%d ROUNDS?! How long did that take?!" % rounds)
+    print("Well, this is a programmed simulation so I guess it was instantaneous, but STILL!")
+    print("You should be ashamed.")
