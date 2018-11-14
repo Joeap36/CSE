@@ -10,6 +10,7 @@ while ctotal > 0:
     print("You bet $1")
     generated_number_1 = random.randint(1, 6)
     generated_number_2 = random.randint(1, 6)
+    print("Your rolled %d and %d" % (generated_number_1, generated_number_2))
     roll = (generated_number_1 + generated_number_2)
     print("You rolled a %d" % roll)
     if roll != 7:
