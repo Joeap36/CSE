@@ -21,7 +21,7 @@ while ctotal > 0:
         print("You won the bet and got $5")
         if mtotal < ctotal:
             mtotal = ctotal
-            bestround = round
+            best_round = rounds
     rounds += 1
 
 if ctotal <= 0:

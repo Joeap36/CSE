@@ -19,19 +19,20 @@
     <session id="-667066214">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="3" />
-          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.60" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -47,13 +48,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="6624" />
+          <entry key="py" value="6688" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="6624" />
+          <entry key="Python" value="6688" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -83,11 +84,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Joseph Portela - Lucky 7s.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="595">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <marker date="1542216604775" expanded="true" signature="83:84" ph="..." />
-                <marker date="1542216604775" expanded="true" signature="145:146" ph="..." />
+                <marker date="1542301679529" expanded="true" signature="83:84" ph="..." />
+                <marker date="1542301679529" expanded="true" signature="145:146" ph="..." />
               </folding>
             </state>
           </provider>
@@ -96,16 +97,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/Joseph Portela - Hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="460">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
-                <marker date="1542216848372" expanded="true" signature="14:142" ph="..." />
-                <marker date="1542216848372" expanded="true" signature="156:292" ph="..." />
-                <marker date="1542216848372" expanded="true" signature="306:456" ph="..." />
-                <marker date="1542216848372" expanded="true" signature="470:620" ph="..." />
-                <marker date="1542216848372" expanded="true" signature="634:786" ph="..." />
-                <marker date="1542216848372" expanded="true" signature="800:958" ph="..." />
-                <marker date="1542216848372" expanded="true" signature="972:973" ph="..." />
+                <marker date="1542389593963" expanded="true" signature="14:138" ph="..." />
+                <marker date="1542389593963" expanded="true" signature="152:282" ph="..." />
+                <marker date="1542389593963" expanded="true" signature="296:436" ph="..." />
+                <marker date="1542389593963" expanded="true" signature="450:590" ph="..." />
+                <marker date="1542389593963" expanded="true" signature="604:746" ph="..." />
+                <marker date="1542389593963" expanded="true" signature="760:906" ph="..." />
+                <marker date="1542389593963" expanded="true" signature="920:921" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,7 +143,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -154,7 +155,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,6 +181,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,11 +342,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4852459" visible="true" weight="0.2980333" />
-      <window_info id="Structure" order="1" sideWeight="0.5147541" side_tool="true" visible="true" weight="0.2980333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4819672" visible="true" weight="0.30711043" />
+      <window_info id="Structure" order="1" sideWeight="0.5180328" side_tool="true" visible="true" weight="0.30711043" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.2677761" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -403,27 +404,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Joseph Portela - Lucky 7s.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <marker date="1542216604775" expanded="true" signature="83:84" ph="..." />
-            <marker date="1542216604775" expanded="true" signature="145:146" ph="..." />
+            <marker date="1542301679529" expanded="true" signature="83:84" ph="..." />
+            <marker date="1542301679529" expanded="true" signature="145:146" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Joseph Portela - Hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="460">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <marker date="1542216848372" expanded="true" signature="14:142" ph="..." />
-            <marker date="1542216848372" expanded="true" signature="156:292" ph="..." />
-            <marker date="1542216848372" expanded="true" signature="306:456" ph="..." />
-            <marker date="1542216848372" expanded="true" signature="470:620" ph="..." />
-            <marker date="1542216848372" expanded="true" signature="634:786" ph="..." />
-            <marker date="1542216848372" expanded="true" signature="800:958" ph="..." />
-            <marker date="1542216848372" expanded="true" signature="972:973" ph="..." />
+            <marker date="1542389593963" expanded="true" signature="14:138" ph="..." />
+            <marker date="1542389593963" expanded="true" signature="152:282" ph="..." />
+            <marker date="1542389593963" expanded="true" signature="296:436" ph="..." />
+            <marker date="1542389593963" expanded="true" signature="450:590" ph="..." />
+            <marker date="1542389593963" expanded="true" signature="604:746" ph="..." />
+            <marker date="1542389593963" expanded="true" signature="760:906" ph="..." />
+            <marker date="1542389593963" expanded="true" signature="920:921" ph="..." />
           </folding>
         </state>
       </provider>
