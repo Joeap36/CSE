@@ -150,3 +150,35 @@ print(3 != 4)
 a = 3  # A is set to 3
 a == 3 # Is a equal to 3?
 """
+
+# Creating a list
+colors = ["blue", "turquoise", "pink", "orange", "black", "red"]  # USE SQUARE BRACKETS!!!
+print(colors)
+print(colors[1])
+print(colors[0])
+
+# Length of the list
+print("There are %d things in the list." % len(colors))
+
+# Changing Elements in a list
+colors[1] = "green"
+print(colors[1])
+
+# Looping through lists
+for item in colors:
+    print(item)
+
+'''
+1. Make a list with 7 items
+2. change the 3rd thing in the list
+3. print the item
+4. print the full list
+'''
+
+deadly_sins = ["lust", "greed", "pride", "gluttony", "envy", "sloth", "wrath"]
+deadly_sins[2] = "pouring milk before cereal"
+print(deadly_sins[2])
+print(deadly_sins)
+
+# Slicing a list
+print(deadly_sins[1:3])
