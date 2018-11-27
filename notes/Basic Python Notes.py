@@ -180,5 +180,70 @@ deadly_sins[2] = "pouring milk before cereal"
 print(deadly_sins[2])
 print(deadly_sins)
 
+
 # Slicing a list
+
 print(deadly_sins[1:3])
+print(deadly_sins[1:4])
+print(deadly_sins[1:])
+print(deadly_sins[:4])
+
+
+food_list = ["pizza", "chips",
+             "spaghetti", "chicken", "beef", "rice",
+             "hamburger", "salad", "ice cream", "calzone",
+             "lasagna", "fries", "bacon", "grapes"]
+print(len(food_list))
+
+# Adding stuff to a list
+food_list.append("eggs")
+food_list.append("pancakes")
+# Notice that everything is object.method(parameters)
+print(food_list)
+
+food_list.insert(1, "waffles")
+print(food_list)
+
+# Removing things from a list
+food_list.remove("salad")
+print(food_list)
+
+
+consoles_list = ["PS4", "Xbox One", "Switch"]
+consoles_list.append("3DS")
+consoles_list.remove("Xbox One")
+print(consoles_list)
+
+# Tuples
+brands = ("apple", "samsung", "HTC")  # Notice the parentheses
+
+# Also removing stuff from a list
+print(food_list)
+food_list.pop(0)
+print(food_list)
+
+# Find the index of an item
+print(food_list.index("chicken"))
+
+# Changing things into a list
+string1 = "turquoise"
+list1 = list(string1)
+print(list1)
+
+# Hangman hints
+for i in range(len(list1)):  # i goes through all indicies
+    if list1[i] == "u":  # if we find a U
+        list1.pop(i)  # remove the i-th index
+        list1.insert(i, "*")  # Put a * there instead
+'''
+for character in list1:
+    if character == "u":
+        # replace with a *
+        current_index = list1.index(character)
+        list1.pop(current_index)
+        list1.insert(current_index, "*")
+'''
+
+
+# Turn a list into a string
+print("".join(list1))
