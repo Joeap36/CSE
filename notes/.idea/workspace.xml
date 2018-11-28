@@ -19,12 +19,13 @@
     <session id="-667066214">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="3" />
           <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.40" value="4" />
@@ -32,29 +33,29 @@
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.60" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="7" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="py" value="8821" />
+          <entry key="py" value="9008" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="8821" />
+          <entry key="Python" value="9008" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -66,30 +67,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="243" column="40" selection-start-line="243" selection-start-column="40" selection-end-line="243" selection-end-column="40" />
+            <state relative-caret-position="341">
+              <caret line="199" column="28" lean-forward="true" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
               <folding>
-                <marker date="1543340733168" expanded="true" signature="1342:1347" ph="..." />
-                <marker date="1543340733168" expanded="true" signature="1425:1430" ph="..." />
-                <marker date="1543340733168" expanded="true" signature="1515:1520" ph="..." />
-                <marker date="1543340733168" expanded="true" signature="2106:2111" ph="..." />
+                <marker date="1543424623722" expanded="true" signature="1342:1347" ph="..." />
+                <marker date="1543424623722" expanded="true" signature="1425:1430" ph="..." />
+                <marker date="1543424623722" expanded="true" signature="1515:1520" ph="..." />
+                <marker date="1543424623722" expanded="true" signature="2106:2111" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Joseph Portela - Lucky 7s.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Joseph Portela - Guess Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <marker date="1542301679529" expanded="true" signature="83:84" ph="..." />
-                <marker date="1542301679529" expanded="true" signature="145:146" ph="..." />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Joseph Portela - Mad Lib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -97,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/Joseph Portela - Hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="528">
               <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <marker date="1542389593963" expanded="true" signature="14:138" ph="..." />
@@ -128,12 +134,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Hello World.py" />
-        <option value="$PROJECT_DIR$/Joseph Portela - Mad Lib.py" />
         <option value="$PROJECT_DIR$/Guess Game.py" />
-        <option value="$PROJECT_DIR$/Joseph Portela - Guess Game.py" />
         <option value="$PROJECT_DIR$/Joseph Portela - Lucky 7s.py" />
         <option value="$PROJECT_DIR$/venv/Joseph Portela - Hangman.py" />
         <option value="$PROJECT_DIR$/Basic Python Notes.py" />
+        <option value="$PROJECT_DIR$/Joseph Portela - Mad Lib.py" />
+        <option value="$PROJECT_DIR$/Joseph Portela - Guess Game.py" />
       </list>
     </option>
   </component>
@@ -155,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,7 +188,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,8 +351,8 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47868854" visible="true" weight="0.3161876" />
-      <window_info id="Structure" order="1" sideWeight="0.52131146" side_tool="true" visible="true" weight="0.3161876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47704917" visible="true" weight="0.3207262" />
+      <window_info id="Structure" order="1" sideWeight="0.5229508" side_tool="true" visible="true" weight="0.3207262" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.2677761" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -375,33 +381,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Joseph Portela - Mad Lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Joseph Portela - Guess Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="243" column="40" selection-start-line="243" selection-start-column="40" selection-end-line="243" selection-end-column="40" />
-          <folding>
-            <marker date="1543340733168" expanded="true" signature="1342:1347" ph="..." />
-            <marker date="1543340733168" expanded="true" signature="1425:1430" ph="..." />
-            <marker date="1543340733168" expanded="true" signature="1515:1520" ph="..." />
-            <marker date="1543340733168" expanded="true" signature="2106:2111" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Joseph Portela - Lucky 7s.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -413,9 +392,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Joseph Portela - Mad Lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Joseph Portela - Hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="528">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <marker date="1542389593963" expanded="true" signature="14:138" ph="..." />
@@ -426,6 +412,26 @@
             <marker date="1542389593963" expanded="true" signature="760:906" ph="..." />
             <marker date="1542389593963" expanded="true" signature="920:921" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="199" column="28" lean-forward="true" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
+          <folding>
+            <marker date="1543424623722" expanded="true" signature="1342:1347" ph="..." />
+            <marker date="1543424623722" expanded="true" signature="1425:1430" ph="..." />
+            <marker date="1543424623722" expanded="true" signature="1515:1520" ph="..." />
+            <marker date="1543424623722" expanded="true" signature="2106:2111" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Joseph Portela - Guess Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
