@@ -1,7 +1,7 @@
 import random
 
 words = ["avalanche", "breach", "chimera", "diameter", "evergreen", "florist", "garrison", "horoscope", "interior",
-         "jubilee", "katana", "liaison", "menace", "negative", "obfuscate", "parabola", "quarrel", "remember",
+         "jubilee", "kiosk", "liaison", "menace", "negative", "obfuscate", "parabola", "quarrel", "remember",
          "salamander", "turquoise", "undermine", "variable", "wilderness", "xenophobia", "youthful", "zephyr"]
 
 
@@ -74,3 +74,5 @@ def wrong_6():
     print(" |   / \ ")
     print("---")
 
+
+word = random.choice(words)
