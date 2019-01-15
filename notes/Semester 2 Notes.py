@@ -1,3 +1,5 @@
+import string
+
 print("Hello World!")
 # Big Chungus 5
 
@@ -20,3 +22,5 @@ print(list1)
 print(list1[2])
 
 print(len(list1))
+
+print(list(string.ascii_letters))
