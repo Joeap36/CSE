@@ -76,3 +76,4 @@ def wrong_6():
 
 
 word = random.choice(words)
+guesses = 6
