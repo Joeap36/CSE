@@ -1,9 +1,4 @@
-import random
-
-words = ["avalanche", "big chungus", "chimera", "diameter", "evergreen", "florist", "garrison", "horoscope", "interior",
-         "jubilee", "kiosk", "liaison", "menace", "negative", "obfuscate", "parabola", "quarrel", "remember",
-         "salamander", "turquoise", "undermine", "variable", "wilderness", "xenophobia", "youthful", "zephyr"]
-
+__author__ = "Joseph Portela"
 
 def wrong_0():
     print("-----|")
@@ -73,7 +68,3 @@ def wrong_6():
     print(" |   |")
     print(" |  / \ ")
     print("---")
-
-
-word = random.choice(words)
-guesses = 6
