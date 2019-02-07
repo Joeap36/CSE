@@ -1,24 +1,40 @@
 world_map = {
-    'R19A': {
-        'NAME': "Mr. Wiebe's Room",
-        'DESCRIPTION': "This is the classroom you are in right "
-                       "now. There are two doors on the north wall",
+    'WHITE': {
+        'NAME': "The White Room",
+        'DESCRIPTION': "The room is almost blindingly white, there"
+                       "are four passages, each on one side of the"
+                       "room. Violet is to the south, scarlet is to"
+                       "the east, yellow is to the north, and"
+                       "turquoise is to the west.",
         'PATHS': {
-            'NORTH': "PARKING_LOT"
+            'NORTH': 'YELLOW',
+            'EAST': 'SCARLET',
+            'SOUTH': 'VIOLET',
+            'WEST': 'TURQUOISE'
         }
     },
-    'PARKING_LOT': {
-        'NAME': "The North Parking Lot",
-        'DESCRIPTION': "There are a couple cars parked here.",
+    'YELLOW': {
+        'NAME': "The Yellow Room",
+        'DESCRIPTION': "The room is completely yellow. Four exits, one"
+                       "on each wall, leave the room. Orange yellow is"
+                       "to the north, red is to the east, white is to"
+                       "the south, and yellow green is to the west.",
         'PATHS': {
-            'SOUTH': 'R19A'
+            'NORTH': 'ORANGE_YELLOW',
+            'EAST': 'RED',
+            'SOUTH': 'WHITE',
+            'WEST': 'YELLOW_GREEN'
         }
+    },
+    'ORANGE_YELLOW': {
+        'NAME': "The Orange Yellow Room",
+        'DESCRIPTION': ""
     }
 }
 
 # Controller
 playing = True
-current_node = world_map['R19A']
+current_node = world_map['WHITE']
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
 
 while playing:
