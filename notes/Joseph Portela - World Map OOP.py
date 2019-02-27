@@ -8,6 +8,7 @@ class Room(object):
         self.vworp = vworp
         self.description = description
 
+
 class Player(object):
     def __init__(self, starting_location):
         self.current_location = starting_location
@@ -27,6 +28,7 @@ class Player(object):
         :return: The Room Object if it exists, or None if it does not
         """
         return getattr(self.current_location, direction)
+        return globals()[name_of_room]
 
 
 vworp = Room("Vworp", None, None, None, None, None, "Vworp")
@@ -111,9 +113,11 @@ while playing:
         playing = False
     elif command.lower() in directions:
         try:
-            next_room = player.find_next_room(command)
+            next_room = player.find_next_room(command.lower())
+            if next_room is None:
+                raise AttributeError
             player.move(next_room)
-        except KeyError:
-            print("I can't go that way.")
+        except AttributeError:
+            print("This path does not exist")
     else:
         print("Command Not Found")
