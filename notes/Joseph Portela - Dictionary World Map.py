@@ -73,7 +73,88 @@ world_map = {
                        "on each wall, leave the room. White is to the"
                        "north, purple is to the east, blue violet is to"
                        "the south, and cyan blue is to the west.",
-        'PATHS':
+        'PATHS': {
+            'NORTH': 'WHITE',
+            'EAST': 'PURPLE',
+            'SOUTH': 'BLUE_VIOLET',
+            'WEST': 'CYAN_BLUE'
+        }
+    },
+    'BLUE_VIOLET': {
+        'NAME': "The Blue Violet Room",
+        'DESCRIPTION': "The room is completely blue violet. Four exits,"
+                       "one on each wall, leave the room. Violet is to"
+                       "the north, purple violet is to the east, a strange,"
+                       " portal-like door is to the south, and blue is to"
+                       "the west.",
+        'PATHS': {
+            'NORTH': 'VIOLET',
+            'EAST': 'PURPLE_VIOLET',
+            'SOUTH': 'VWORP',
+            'WEST': 'BLUE'
+        }
+    },
+    'TURQUOISE': {
+        'NAME': "The Turquoise Room",
+        'DESCRIPTION': "The room is completely turquoise. Four exits, one"
+                       "on each wall, leave the room. Yellow green is to"
+                       "the north, white is to the east, cyan blue is to"
+                       "the south, and blueish green is to the west.",
+        'PATHS': {
+            'NORTH': 'YELLOW_GREEN',
+            'EAST': 'WHITE',
+            'SOUTH': 'CYAN_BLUE',
+            'WEST': 'BLUEISH_GREEN'
+        }
+    },
+    'RED': {
+        'NAME': "The Red Room",
+        'DESCRIPTION': "The room is completely red. Four exits, one"
+                       "on each wall, leave the room. Orange is to the"
+                       "north, scarlet red is to the east, scarlet is"
+                       "to the south, and yellow is to the west.",
+        'PATHS': {
+            'NORTH': 'ORANGE',
+            'EAST': 'SCARLET_RED',
+            'SOUTH': 'SCARLET',
+            'WEST': 'YELLOW'
+        }
+    },
+    'ORANGE_RED': {
+        'NAME': "The Orange Red Room",
+        'DESCRIPTION': "The room is completely orange red. Two exits"
+                       "leave the room. Scarlet red is to the south"
+                       "and orange is to the west.",
+        'PATHS': {
+            'SOUTH': 'SCARLET_RED',
+            'WEST': 'ORANGE'
+        }
+    },
+    'PURPLE': {
+        'NAME': "The Purple Room",
+        'DESCRIPTION': "The room is completely purple. Four exits, one"
+                       "on each wall, leave the room. Scarlet is to the"
+                       "north, magenta is to the east, purple violet is"
+                       "to the south, and violet is to the west.",
+        'PATHS': {
+            'NORTH': 'SCARLET',
+            'EAST': 'MAGENTA',
+            'SOUTH': 'PURPLE_VIOLET',
+            'WEST': 'VIOLET'
+        }
+    },
+    'PURPLE_MAGENTA': {
+        'NAME': "The Purple Magenta Room",
+        'DESCRIPTION': "The room is completely violet. Two exits"
+                       "leave the room. Magenta is to the north"
+                       "and purple violet is to the west.",
+        'PATHS': {
+            'NORTH': 'MAGENTA',
+            'WEST': 'PURPLE_VIOLET'
+        }
+    },
+    'CYAN_BLUE': {
+        
     }
 }
 
