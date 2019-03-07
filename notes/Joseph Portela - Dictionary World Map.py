@@ -154,7 +154,100 @@ world_map = {
         }
     },
     'CYAN_BLUE': {
-        
+        'NAME': "The Cyan Blue Room",
+        'DESCRIPTION': "The room is completely cyan blue. Four exits,"
+                       "one on each wall, leave the room. Turquoise"
+                       "is to the north, violet is to the east, blue"
+                       "is to the south, and greenish cyan is to the"
+                       "west.",
+        'PATHS': {
+            'NORTH': 'TURQUOISE',
+            'EAST': 'VIOLET',
+            'SOUTH': 'BLUE',
+            'WEST': 'GREENISH_CYAN'
+        }
+    },
+    'BLUEISH_CYAN': {
+        'NAME': "The Blueish Cyan Room",
+        'DESCRIPTION': "The room is completely blueish cyan. Two"
+                       "exits leave the room. Greenish cyan is to"
+                       "the north, and blue is to the east.",
+        'PATHS': {
+            'NORTH': 'GREENISH_CYAN',
+            'EAST': 'BLUE'
+        }
+    },
+    'YELLOW_GREEN': {
+        'NAME': "The Yellow Green Room",
+        'DESCRIPTION': "The room is completely yellow green. Four exits,"
+                       "one on each wall, leave the room. Lemon yellow is"
+                       "to the north, yellow is to the east, turquoise is"
+                       "to the south, and green is to the west.",
+        'PATHS': {
+            'NORTH': 'LEMON_YELLOW',
+            'EAST': 'YELLOW',
+            'SOUTH': 'TURQUOISE',
+            'WEST': 'GREEN'
+        }
+    },
+    'SAP_GREEN': {
+        'NAME': "The Sap Green Room",
+        'DESCRIPTION': "The room is completely sap green. Two exits"
+                       "leave the room. Lemon yellow is to the east, and"
+                       "green is to the south.",
+        'PATHS': {
+            'EAST': 'LEMON_YELLOW',
+            'SOUTH': 'GREEN'
+        }
+    },
+    'ORANGE': {
+        'NAME': "The Orange Room",
+        'DESCRIPTION': "The room is completely orange. Three exits"
+                       "leave the room. Orange red is to the east, red is"
+                       "to the south, and orange yellow is to the west.",
+        'PATHS': {
+            'EAST': 'ORANGE_RED',
+            'SOUTH': 'RED',
+            'WEST': 'ORANGE_YELLOW'
+        }
+    },
+    'SCARLET_RED': {
+        'NAME': "The Scarlet Red Room",
+        'DESCRIPTION': "The room is completely scarlet red. Three exits"
+                       "leave the room. Orange red is to the north, crimson"
+                       "is to the south, and red is to the west.",
+        'PATHS': {
+            'NORTH': 'ORANGE_RED',
+            'SOUTH': 'CRIMSON',
+            'WEST': 'RED'
+        }
+    },
+    'MAGENTA': {
+        'NAME': "The Magenta Room",
+        'DESCRIPTION': "The room is completely magenta. Three exits"
+                       "leave the room. Crimson is to the north, purple"
+                       "magenta is to the south, and purple is to the"
+                       "west.",
+        'PATHS': {
+            'NORTH': 'CRIMSON',
+            'SOUTH': 'PURPLE_MAGENTA',
+            'WEST': 'PURPLE'
+        }
+    },
+    'PURPLE_VIOLET': {
+        'NAME': "The Purple Violet Room",
+        'DESCRIPTION': "The room is completely purple violet. Three exits"
+                       "leave the room. Purple is to the north, purple"
+                       "magenta is to the east, and blue violet is to the"
+                       "west.",
+        'PATHS': {
+            'NORTH': 'PURPLE',
+            'EAST': 'PURPLE_MAGENTA',
+            'WEST': 'BLUE_VIOLET'
+        }
+    },
+    'BLUE': {
+        'NAME':
     }
 }
 
