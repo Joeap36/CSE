@@ -8,8 +8,8 @@ class Shaggy(object):
 
     def increase_power(self):
         if self.power_percentage < 100:
-            self.power_percentage += 1
-            print("Shaggy increased his power by 1 percent")
+            self.power_percentage += 5
+            print("Shaggy increased his power by 5 percent")
             print("Shaggy now has %d percent power" % self.power_percentage)
         elif self.power_percentage == 100:
             self.power_percentage = 9001
@@ -17,4 +17,4 @@ class Shaggy(object):
         else:
             print("Shaggy cannot increase his power further")
 
-    def
+    def 

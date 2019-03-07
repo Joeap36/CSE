@@ -247,7 +247,60 @@ world_map = {
         }
     },
     'BLUE': {
-        'NAME':
+        'NAME': "The Blue Room",
+        'DESCRIPTION': "The room is completely blue. Three exits leave the"
+                       "room. Cyan Blue is to the north, blue violet is to"
+                       "the east, and blueish cyan is to the west.",
+        'PATHS': {
+            'NORTH': 'CYAN_BLUE',
+            'EAST': 'BLUE_VIOLET',
+            'WEST': 'BLUEISH_CYAN'
+        }
+    },
+    'GREENISH_CYAN': {
+        'NAME': "The Greenish Cyan Room",
+        'DESCRIPTION': "The room is completely greenish cyan. Three exits"
+                       "leave the room. Blueish green is to the north, cyan"
+                       "blue is to the east, and blueish cyan is to the"
+                       "south.",
+        'PATHS': {
+            'NORTH': 'BLUEISH_GREEN',
+            'EAST': 'CYAN_BLUE',
+            'SOUTH': 'BLUEISH_CYAN'
+        }
+    },
+    'GREEN': {
+        'NAME': "The Green Room",
+        'DESCRIPTION': "The room is completely green. Three exits leave"
+                       "the room. Sap green is to the north, yellow"
+                       "green is to the east, and blueish green is to the"
+                       "south.",
+        'PATHS': {
+            'NORTH': 'SAP_GREEN',
+            'EAST': 'YELLOW_GREEN',
+            'SOUTH': 'BLUEISH_GREEN'
+        }
+    },
+    'LEMON_YELLOW': {
+        'NAME': "The Lemon Yellow Room",
+        'DESCRIPTION': "The room is completely lemon yellow. Three exits"
+                       "leave the room. Orange yellow is to the east,"
+                       "yellow green is to the south, and sap green is to"
+                       "the west.",
+        'PATHS': {
+            'EAST': 'ORANGE_YELLOW',
+            'SOUTH': 'YELLOW_GREEN',
+            'WEST': 'SAP_GREEN'
+        }
+    },
+    'VWORP': {
+        'NAME': "Vworp",
+        'DESCRIPTION': "Vworpvworpvworpvworpvworpvworpvworpvworpvworpvworp"
+                       "vworpvworpvworpvworpvworpvworpvworpvworpvworpvworp"
+                       "vworpvworpvworpvworpvworpvworpvworpvworpvworpvworp",
+        'PATHS': {
+            'VWORP': 'WHITE'
+        }
     }
 }
 
