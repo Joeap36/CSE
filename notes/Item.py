@@ -1,6 +1,10 @@
 class Item(object):
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
 
-class Weapon(Item):
-    def __init__(self):
-        super(Weapon, self).__init__()
+
+class Offense(Item):
+    def __init__(self, name, durability):
+        super(Offense, self).__init__(name)
+        self.name = name
+        self.durability = durability

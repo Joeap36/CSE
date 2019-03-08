@@ -2,6 +2,7 @@ class Vehicle(object):
     def __init__(self):
         self.name = name
 
+
 class Car(Vehicle):
     def __init__(self, name, milage):
         super(Car, self).__init__(name)

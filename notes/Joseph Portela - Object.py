@@ -17,4 +17,4 @@ class Shaggy(object):
         else:
             print("Shaggy cannot increase his power further")
 
-    def 
+    def
