@@ -20,7 +20,7 @@ class Shaggy(object):
             print("Shaggy cannot increase his power further")
 
     def fight_matt(self):
-        if self.ultra_instinct = True:
+        if self.ultra_instinct is True:
             self.matt_from_wii_sports = False
             self.most_powerful_being = True
             print("Shaggy fought Matt from Wii Sports and won. He is now the most powerful being")
@@ -29,9 +29,8 @@ class Shaggy(object):
             print("Shaggy fought Matt from Wii Sports and lost. His power level was reset to 0")
             
     def destroy_universe(self):
-        if self.most_powerful_being = True:
+        if self.most_powerful_being is True:
             self.universe = False
             print("Shaggy has destroyed the universe. All that once was is gone")
         else:
             print("Shaggy is not yet strong enough to do so")
-                  
