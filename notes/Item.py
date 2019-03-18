@@ -18,6 +18,15 @@ class Weapon(Item):
         self.attack = attack
 
 
+class Bow(Weapon):
+    def __init__(self, name, durability, attack, shots):
+        super(Bow, self).__init__(name, durability, attack)
+        self.name = name
+        self.durability = durability
+        self.attack = attack
+        self.shots = shots
+
+
 class ElecWeapon(Weapon):
     def __init__(self, name, durability, attack):
         super(ElecWeapon, self).__init__(name, durability, attack)
@@ -43,10 +52,27 @@ class FireWeapon(Weapon):
 
 
 class Armor(Item):
-    def __init__(self, name, defense):
+    def __init__(self, name, defense, slot):
         super(Armor, self).__init__(name)
         self.name = name
         self.defense = defense
+        self.slot = slot
+
+
+class FireArmor(Armor):
+    def __init__(self, name, defense, slot):
+        super(FireArmor, self).__init__(name, defense)
+        self.name = name
+        self.defense = defense
+        self.slot = slot
+
+
+class IceArmor(Armor):
+    def __init__(self, name, defense, slot):
+        super(IceArmor, self).__init__(name, defense)
+        self.name = name
+        self.defense = defense
+        self.slot = slot
 
 
 class Character(object):
@@ -88,7 +114,6 @@ eightfold_blade = Weapon("Eightfold Blade", 26, 15)
 ancient_short_sword = Weapon("Ancient Short Sword", 54, 40)
 rusty_broadsword = Weapon("Rusty Broadsword", 8, 6)
 royal_guard_sword = Weapon("Royal Guard's Sword", 14, 48)
-flameblade = Weapon("Flameblade", 36, 24)
 goddess_sword = Weapon("Goddess Sword", 45, 28)
 boko_club = Weapon("Boko Club", 8, 4)
 spiked_boko_club = Weapon("Spiked Boko Club", 14, 12)
@@ -102,8 +127,6 @@ guardian_sword_plus_plus = Weapon("Guardian Sword++", 20, 5)
 lynel_sword = Weapon("Lynel Sword", 26, 24)
 mighty_lynel_sword = Weapon("Mighty Lynel Sword", 32, 36)
 savage_lynel_sword = Weapon("Savage Lynel Sword", 41, 58)
-fire_rod = Weapon("Fire Rod", 14, 5)
-meteor_rod = Weapon("Meteor Rod", 32, 10)
 vicious_sickle = Weapon("Vicious Sickle", 14, 16)
 demon_carver = Weapon("Demon Carver", 25, 40)
 
@@ -118,3 +141,6 @@ ice_rod = Weapon("Ice Rod", 14, 5)
 blizzard_rod = Weapon("Blizzard Rod", 32, 10)
 
 # Fire Weapons
+flameblade = FireWeapon("Flameblade", 36, 24)
+fire_rod = FireWeapon("Fire Rod", 14, 5)
+meteor_rod = FireWeapon("Meteor Rod", 32, 10)
