@@ -129,6 +129,24 @@ mighty_lynel_sword = Weapon("Mighty Lynel Sword", 32, 36)
 savage_lynel_sword = Weapon("Savage Lynel Sword", 41, 58)
 vicious_sickle = Weapon("Vicious Sickle", 14, 16)
 demon_carver = Weapon("Demon Carver", 25, 40)
+woodcutter_axe = Weapon("Woodcutter's Axe", 47, 3)
+double_axe = Weapon("Double Axe", 52, 18)
+iron_sledgehammer = Weapon("Iron Sledgehammer", 40, 12)
+traveler_claymore = Weapon("Traveler's Claymore", 20, 10)
+soldier_claymore = Weapon("Soldier's Claymore", 25, 20)
+knight_claymore = Weapon("Knight's Claymore", 30, 38)
+royal_claymore = Weapon("Royal Claymore", 40, 52)
+silver_longsword = Weapon("Silver Longsword", 30, 22)
+cobble_crusher = Weapon("Cobble Crusher", 30, 15)
+stone_smasher = Weapon("Cobble Crusher", 40, 42)
+boulder_breaker = Weapon("Boulder Breaker", 60, 60)
+golden_claymore = Weapon("Golden Claymore", 30, 28)
+eightfold_longblade = Weapon("Eightfold Longblade", 25, 32)
+edge_of_duality = Weapon("Edge of Duality", 35, 50)
+ancient_bladesaw = Weapon("Ancient Bladesaw", 50, 55)
+rusty_claymore = Weapon("Rusty Claymore", 10, 12)
+royal_guard_claymore = Weapon("Royal Guard's Claymore", 15, 72)
+
 
 # Electric Weapons
 thunderblade = ElecWeapon("Thunderblade", 36, 22)
@@ -137,10 +155,11 @@ thunderstorm_rod = ElecWeapon("Thunderstorm Rod", 32, 10)
 
 # Ice Weapons
 frostblade = IceWeapon("Frostblade", 30, 20)
-ice_rod = Weapon("Ice Rod", 14, 5)
-blizzard_rod = Weapon("Blizzard Rod", 32, 10)
+ice_rod = IceWeapon("Ice Rod", 14, 5)
+blizzard_rod = IceWeapon("Blizzard Rod", 32, 10)
 
 # Fire Weapons
 flameblade = FireWeapon("Flameblade", 36, 24)
 fire_rod = FireWeapon("Fire Rod", 14, 5)
 meteor_rod = FireWeapon("Meteor Rod", 32, 10)
+
