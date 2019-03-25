@@ -67,9 +67,25 @@ class FireArmor(Armor):
         self.slot = slot
 
 
-class IceArmor(Armor):
+class HeatArmor(Armor):
     def __init__(self, name, defense, slot):
-        super(IceArmor, self).__init__(name, defense)
+        super(HeatArmor, self).__init__(name, defense)
+        self.name = name
+        self.defense = defense
+        self.slot = slot
+
+
+class ColdArmor(Armor):
+    def __init__(self, name, defense, slot):
+        super(ColdArmor, self).__init__(name, defense)
+        self.name = name
+        self.defense = defense
+        self.slot = slot
+
+
+class ElecArmor(Armor):
+    def __init__(self, name, defense, slot):
+        super(ElecArmor, self).__init__(name, defense)
         self.name = name
         self.defense = defense
         self.slot = slot
@@ -163,3 +179,10 @@ flameblade = FireWeapon("Flameblade", 36, 24)
 fire_rod = FireWeapon("Fire Rod", 14, 5)
 meteor_rod = FireWeapon("Meteor Rod", 32, 10)
 
+# Bows
+wooden_bow = Bow("Wooden Bow", 20, 4, 1)
+
+# Armor
+amber_earrings = Armor("Amber Earrings", 4, 1)
+
+# Cold Armor
