@@ -61,7 +61,7 @@ class Armor(Item):
 
 class FireArmor(Armor):
     def __init__(self, name, defense, slot):
-        super(FireArmor, self).__init__(name, defense)
+        super(FireArmor, self).__init__(name, defense, slot)
         self.name = name
         self.defense = defense
         self.slot = slot
@@ -69,7 +69,7 @@ class FireArmor(Armor):
 
 class HeatArmor(Armor):
     def __init__(self, name, defense, slot):
-        super(HeatArmor, self).__init__(name, defense)
+        super(HeatArmor, self).__init__(name, defense, slot)
         self.name = name
         self.defense = defense
         self.slot = slot
@@ -77,7 +77,7 @@ class HeatArmor(Armor):
 
 class ColdArmor(Armor):
     def __init__(self, name, defense, slot):
-        super(ColdArmor, self).__init__(name, defense)
+        super(ColdArmor, self).__init__(name, defense, slot)
         self.name = name
         self.defense = defense
         self.slot = slot
@@ -85,7 +85,23 @@ class ColdArmor(Armor):
 
 class ElecArmor(Armor):
     def __init__(self, name, defense, slot):
-        super(ElecArmor, self).__init__(name, defense)
+        super(ElecArmor, self).__init__(name, defense, slot)
+        self.name = name
+        self.defense = defense
+        self.slot = slot
+
+
+class AttackArmor(Armor):
+    def __init__(self, name, defense, slot):
+        super(AttackArmor, self).__init__(name, defense, slot)
+        self.name = name
+        self.defense = defense
+        self.slot = slot
+
+
+class SneakArmor(Armor):
+    def __init__(self, name, defense, slot):
+        super(SneakArmor, self).__init__(name, defense, slot)
         self.name = name
         self.defense = defense
         self.slot = slot
@@ -186,3 +202,14 @@ wooden_bow = Bow("Wooden Bow", 20, 4, 1)
 amber_earrings = Armor("Amber Earrings", 4, 1)
 
 # Cold Armor
+snowquill_headress = ColdArmor("Snowquill Headdress", 3, 1)
+
+# Heat Armor
+sapphire_circlet = HeatArmor("Sapphire Circlet", 3, 1)
+
+# Fire Armor
+flamebreaker_helm = FireArmor("Flamebreaker Helm", 3, 1)
+
+# Attack Armor
+fierce_deity_mask = AttackArmor("Fierce Deity Mask", 3, 1)
+
