@@ -13,7 +13,6 @@ class Food(Item):
 class Weapon(Item):
     def __init__(self, name, durability, attack):
         super(Weapon, self).__init__(name)
-        self.name = name
         self.durability = durability
         self.attack = attack
 
@@ -21,7 +20,6 @@ class Weapon(Item):
 class Bow(Weapon):
     def __init__(self, name, durability, attack, shots):
         super(Bow, self).__init__(name, durability, attack)
-        self.name = name
         self.durability = durability
         self.attack = attack
         self.shots = shots
@@ -30,7 +28,6 @@ class Bow(Weapon):
 class ElecWeapon(Weapon):
     def __init__(self, name, durability, attack):
         super(ElecWeapon, self).__init__(name, durability, attack)
-        self.name = name
         self.durability = durability
         self.attack = attack
 
@@ -38,7 +35,6 @@ class ElecWeapon(Weapon):
 class IceWeapon(Weapon):
     def __init__(self, name, durability, attack):
         super(IceWeapon, self).__init__(name, durability, attack)
-        self.name = name
         self.durability = durability
         self.attack = attack
 
@@ -46,7 +42,6 @@ class IceWeapon(Weapon):
 class FireWeapon(Weapon):
     def __init__(self, name, durability, attack):
         super(FireWeapon, self).__init__(name, durability, attack)
-        self.name = name
         self.durability = durability
         self.attack = attack
 
@@ -54,7 +49,6 @@ class FireWeapon(Weapon):
 class Armor(Item):
     def __init__(self, name, defense, slot):
         super(Armor, self).__init__(name)
-        self.name = name
         self.defense = defense
         self.slot = slot
 
@@ -62,73 +56,53 @@ class Armor(Item):
 class FireArmor(Armor):
     def __init__(self, name, defense, slot):
         super(FireArmor, self).__init__(name, defense, slot)
-        self.name = name
-        self.defense = defense
-        self.slot = slot
 
 
 class HeatArmor(Armor):
     def __init__(self, name, defense, slot):
         super(HeatArmor, self).__init__(name, defense, slot)
-        self.name = name
-        self.defense = defense
-        self.slot = slot
 
 
 class ColdArmor(Armor):
     def __init__(self, name, defense, slot):
         super(ColdArmor, self).__init__(name, defense, slot)
-        self.name = name
-        self.defense = defense
-        self.slot = slot
 
 
 class ElecArmor(Armor):
     def __init__(self, name, defense, slot):
         super(ElecArmor, self).__init__(name, defense, slot)
-        self.name = name
-        self.defense = defense
-        self.slot = slot
 
 
 class AttackArmor(Armor):
     def __init__(self, name, defense, slot):
         super(AttackArmor, self).__init__(name, defense, slot)
-        self.name = name
-        self.defense = defense
-        self.slot = slot
 
 
 class SneakArmor(Armor):
     def __init__(self, name, defense, slot):
         super(SneakArmor, self).__init__(name, defense, slot)
-        self.name = name
-        self.defense = defense
-        self.slot = slot
 
 
 class Character(object):
-    def __init__(self, name, weapon):
+    def __init__(self, name):
         self.name = name
-        self.weapon = weapon
 
 
 class Enemy(Character):
-    def __init__(self, name, weapon, health, itemdrop):
-        super(Enemy, self).__init__(name, weapon)
-        self.name = name
-        self.weapon = weapon
+    def __init__(self, name, damage, health):
+        super(Enemy, self).__init__(name)
+        self.damage = damage
         self.health = health
-        self.itemdrop = itemdrop
 
 
 class Merchant(Character):
-    def __init__(self, name, weapon, stock):
-        super(Merchant, self).__init__(name, weapon)
-        self.name = name
-        self.weapon = weapon
+    def __init__(self, name, stock):
+        super(Merchant, self).__init__(name)
         self.stock = stock
 
+
+# Normal items
+arrow = "arrow"
 
 # Weapons
 master_sword = Weapon("Master Sword", 40, 30)
@@ -212,4 +186,16 @@ flamebreaker_helm = FireArmor("Flamebreaker Helm", 3, 1)
 
 # Attack Armor
 fierce_deity_mask = AttackArmor("Fierce Deity Mask", 3, 1)
+
+# Stealthy Armor
+stealth_mask = SneakArmor("Stealth Mask", 2, 1)
+
+# Food
+apple = Food("Apple", 1)
+
+# Enemy
+red_bokoblin = Enemy("Red Bokoblin", 1, 13)
+
+# Merchant
+beetle = Merchant("Beetle", [boko_club, wooden_bow])
 
