@@ -211,27 +211,7 @@ red_bokoblin = Enemy("Red Bokoblin", 1, 13)
 beetle = Merchant("Beetle", [boko_club, wooden_bow])
 
 
-class Player(object):
-    def __init__(self, starting_location, inventory):
-        self.current_location = starting_location
-        self.inventory = inventory
-
-    def move(self, new_location):
-        """This moves the player to a new room
-
-        :param new_location:  The room object of which you are going to
-        """
-        self.current_location = new_location
-
-    def find_next_room(self, direction):
-        """This method searches the current room to see if a room exists in that direction.
-
-        :param direction: The direction that you want to move to
-        :return: The Room Object if it exists, or None if it does not
-        """
-        return getattr(self.current_location, direction)
-
-
+# Rooms
 vworp = Room("Vworp", None, None, None, None, None, "Vworp")
 white = Room("The White Room", None, None, None, None, None,
              "The room is almost blindingly white, there"
@@ -427,6 +407,27 @@ green.north = sap_green
 sap_green.east = lemon_yellow
 
 
+class Player(object):
+    def __init__(self, starting_location, inventory):
+        self.current_location = starting_location
+        self.inventory = inventory
+
+    def move(self, new_location):
+        """This moves the player to a new room
+
+        :param new_location:  The room object of which you are going to
+        """
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        """This method searches the current room to see if a room exists in that direction.
+
+        :param direction: The direction that you want to move to
+        :return: The Room Object if it exists, or None if it does not
+        """
+        return getattr(self.current_location, direction)
+
+
 # Controls
 player = Player(white, [])
 
@@ -447,5 +448,21 @@ while playing:
             player.move(next_room)
         except AttributeError:
             print("This path does not exist")
+    elif command.lower()[:5] == 'take ':
+        name_of_item = command.lower()[5:]
+
+        # Search the room for the item
+        item_object = None
+        for item in player.current_location.items:
+            if item.name.lower() == name_of_item:
+                item_object = item
+
+        # Add the item to the inventory
+        if item_object is not None:
+            print("You add the %s to your inventory" % item_object.name)
+            player.inventory.append(item_object)
+            player.current_location.items.remove(item_object)
+        else:
+            print("You don't see one")
     else:
         print("Command Not Found")
