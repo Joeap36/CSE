@@ -16,6 +16,16 @@ class Item(object):
         self.name = name
 
 
+class NormalItem(Item):
+
+
+
+class Arrow(Item):
+    def __init__(self, name, amount):
+        super(Arrow, self).__init__(name)
+        self.amount = amount
+
+
 class Food(Item):
     def __init__(self, name, healing):
         super(Food, self).__init__(name)
@@ -408,9 +418,19 @@ sap_green.east = lemon_yellow
 
 
 class Player(object):
-    def __init__(self, starting_location, inventory):
+    def __init__(self, starting_location, winventory, binventory, arinventory, ainventory, finventory, iinventory,
+                 wimax, bimax, aimax, fimax):
         self.current_location = starting_location
-        self.inventory = inventory
+        self.winventory = winventory
+        self.binventory = binventory
+        self.arinventory = arinventory
+        self.ainventory = ainventory
+        self.finventory = finventory
+        self.iinventory = iinventory
+        self.wimax = wimax
+        self.bimax = bimax
+        self.aimax = aimax
+        self.fimax = fimax
 
     def move(self, new_location):
         """This moves the player to a new room
@@ -429,7 +449,7 @@ class Player(object):
 
 
 # Controls
-player = Player(white, [])
+player = Player(white, [], [], [], [], [], [])
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'vworp']
@@ -460,7 +480,18 @@ while playing:
         # Add the item to the inventory
         if item_object is not None:
             print("You add the %s to your inventory" % item_object.name)
-            player.inventory.append(item_object)
+            if isinstance(item_object, Bow):
+                player.binventory.append(item_object)
+            elif isinstance(item_object, Arrow):
+                player.arinventory.append(item_object)
+            elif isinstance(item_object, Weapon):
+                player.winventory.append(item_object)
+            elif isinstance(item_object, Armor):
+                player.ainventory.append(item_object)
+            elif isinstance(item_object, Food):
+                player.finventory.append(item_object)
+            else:
+                player.iinventory.append(item_object)
             player.current_location.items.remove(item_object)
         else:
             print("You don't see one")
