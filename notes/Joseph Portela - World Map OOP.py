@@ -17,7 +17,9 @@ class Item(object):
 
 
 class NormalItem(Item):
-
+    def __init__(self, name, amount):
+        super(NormalItem, self).__init__(name)
+        self.amount = amount
 
 
 class Arrow(Item):
