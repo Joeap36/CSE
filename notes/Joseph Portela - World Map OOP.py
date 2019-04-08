@@ -16,6 +16,11 @@ class Item(object):
         self.name = name
 
 
+class KeyItem(Item):
+    def __init__(self, name):
+        super(KeyItem, self).__init__(name)
+
+
 class NormalItem(Item):
     def __init__(self, name, amount):
         super(NormalItem, self).__init__(name)
@@ -421,7 +426,7 @@ sap_green.east = lemon_yellow
 
 class Player(object):
     def __init__(self, starting_location, winventory, binventory, arinventory, ainventory, finventory, iinventory,
-                 wimax, bimax, aimax, fimax):
+                 kinventory, wimax, bimax, aimax):
         self.current_location = starting_location
         self.winventory = winventory
         self.binventory = binventory
@@ -429,10 +434,10 @@ class Player(object):
         self.ainventory = ainventory
         self.finventory = finventory
         self.iinventory = iinventory
+        self.kinventory = kinventory
         self.wimax = wimax
         self.bimax = bimax
         self.aimax = aimax
-        self.fimax = fimax
 
     def move(self, new_location):
         """This moves the player to a new room
@@ -451,7 +456,7 @@ class Player(object):
 
 
 # Controls
-player = Player(white, [], [], [], [], [], [])
+player = Player(white, [], [], [], [], [], [], [], 10, 10, 10)
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'vworp']
@@ -460,8 +465,10 @@ while playing:
     print(player.current_location.name)
     print(player.current_location.description)
     command = input("> ")
+    # Exit game
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
+    # Move
     elif command.lower() in directions:
         try:
             next_room = player.find_next_room(command.lower())
@@ -481,21 +488,53 @@ while playing:
 
         # Add the item to the inventory
         if item_object is not None:
-            print("You add the %s to your inventory" % item_object.name)
             if isinstance(item_object, Bow):
-                player.binventory.append(item_object)
+                if player.binventory.count() >= player.bimax:
+                    print("Your bow inventory is full.")
+                else:
+                    player.binventory.append(item_object)
+                    player.current_location.items.remove(item_object)
+                    print("You add the %s to your inventory" % item_object.name)
             elif isinstance(item_object, Arrow):
                 player.arinventory.append(item_object)
+                player.current_location.items.remove(item_object)
+                print("You add the %s to your inventory" % item_object.name)
             elif isinstance(item_object, Weapon):
-                player.winventory.append(item_object)
+                if player.winventory.count() >= player.wimax:
+                    print("Your weapon inventory is full.")
+                else:
+                    player.winventory.append(item_object)
+                    player.current_location.items.remove(item_object)
+                    print("You add the %s to your inventory" % item_object.name)
             elif isinstance(item_object, Armor):
-                player.ainventory.append(item_object)
+                if player.ainventory.count() >= player.aimax:
+                    print("Your armor inventory is full.")
+                else:
+                    player.ainventory.append(item_object)
+                    player.current_location.items.remove(item_object)
+                    print("You add the %s to your inventory" % item_object.name)
             elif isinstance(item_object, Food):
                 player.finventory.append(item_object)
+                player.current_location.items.remove(item_object)
+                print("You add the %s to your inventory" % item_object.name)
+            elif isinstance(item_object, KeyItem):
+                player.kinventory.append(item_object)
+                player.current_location.items.remove(item_object)
+                print("You add the %s to your inventory" % item_object.name)
             else:
                 player.iinventory.append(item_object)
-            player.current_location.items.remove(item_object)
+                player.current_location.items.remove(item_object)
+                print("You add the %s to your inventory" % item_object.name)
         else:
             print("You don't see one")
+    # Attack
+    elif command.lower()[:7] == 'attack ':
+        name_of_target = command.lower()[7:]
+
+        # Search for target
+        target = None
+        
+        # Choose weapon
+
     else:
         print("Command Not Found")
