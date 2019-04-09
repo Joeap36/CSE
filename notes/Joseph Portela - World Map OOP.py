@@ -1,5 +1,6 @@
 class Room(object):
-    def __init__(self, name, north=None, east=None, south=None, west=None, worp=None, description=None, items=None):
+    def __init__(self, name, north=None, east=None, south=None, west=None, worp=None, description=None, items=None,
+                 characters=None):
         self.name = name
         self.north = north
         self.east = east
@@ -8,6 +9,7 @@ class Room(object):
         self.worp = worp
         self.description = description
         self.items = items
+        self.characters = characters
 
 
 # Items
@@ -426,7 +428,7 @@ sap_green.east = lemon_yellow
 
 class Player(object):
     def __init__(self, starting_location, winventory, binventory, arinventory, ainventory, finventory, iinventory,
-                 kinventory, wimax, bimax, aimax):
+                 kinventory, wimax, bimax, aimax, wequip, arequip, bequip):
         self.current_location = starting_location
         self.winventory = winventory
         self.binventory = binventory
@@ -438,6 +440,10 @@ class Player(object):
         self.wimax = wimax
         self.bimax = bimax
         self.aimax = aimax
+        self.wequip = wequip
+        self.arequip = arequip
+        self.bequip = bequip
+
 
     def move(self, new_location):
         """This moves the player to a new room
@@ -527,14 +533,34 @@ while playing:
                 print("You add the %s to your inventory" % item_object.name)
         else:
             print("You don't see one")
+    # Equip
+    elif command.lower()[:6] == 'equip ':
+        if command.lower()[6:] == 'weapon':
+            if player.winventory.count() < 1:
+                print("You have nothing to equip.")
+            else:
+                print(player.winventory)
+                equip_name = input("What would you like to equip? > ")
+                for wequip.name.lower() in player.winventory:
+
+'''        
     # Attack
     elif command.lower()[:7] == 'attack ':
         name_of_target = command.lower()[7:]
 
         # Search for target
         target = None
-        
+        for character in player.current_location.characters:
+            if character.name.lower() == name_of_target:
+                if character == Merchant:
+                    print("They seem to be no threat, you shouldn't hurt them.")
+                else:
+                    target = character
+
         # Choose weapon
+        if target != Merchant:
+            print("Will you use a bow or a weapon?")
+            '''
 
     else:
         print("Command Not Found")

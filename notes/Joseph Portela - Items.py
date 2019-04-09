@@ -4,6 +4,11 @@ class Item(object):
         self.name = name
 
 
+class KeyItem(Item):
+    def __init__(self, name):
+        super(KeyItem, self).__init__(name)
+
+
 class Food(Item):
     def __init__(self, name, healing):
         super(Food, self).__init__(name)
@@ -199,3 +204,5 @@ red_bokoblin = Enemy("Red Bokoblin", 1, 13)
 # Merchant
 beetle = Merchant("Beetle", [boko_club, wooden_bow])
 
+# Key Items
+paraglider = KeyItem("Paraglider")
