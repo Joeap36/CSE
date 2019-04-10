@@ -203,22 +203,22 @@ meteor_rod = FireWeapon("Meteor Rod", 32, 10)
 wooden_bow = Bow("Wooden Bow", 20, 4, 1)
 
 # Armor
-amber_earrings = Armor("Amber Earrings", 4, 0)
+amber_earrings = Armor("Amber Earrings", 4, 1)
 
 # Cold Armor
-snowquill_headress = ColdArmor("Snowquill Headdress", 3, 0)
+snowquill_headress = ColdArmor("Snowquill Headdress", 3, 1)
 
 # Heat Armor
-sapphire_circlet = HeatArmor("Sapphire Circlet", 3, 0)
+sapphire_circlet = HeatArmor("Sapphire Circlet", 3, 1)
 
 # Fire Armor
-flamebreaker_helm = FireArmor("Flamebreaker Helm", 3, 0)
+flamebreaker_helm = FireArmor("Flamebreaker Helm", 3, 1)
 
 # Attack Armor
-fierce_deity_mask = AttackArmor("Fierce Deity Mask", 3, 0)
+fierce_deity_mask = AttackArmor("Fierce Deity Mask", 3, 1)
 
 # Stealthy Armor
-stealth_mask = SneakArmor("Stealth Mask", 2, 0)
+stealth_mask = SneakArmor("Stealth Mask", 2, 1)
 
 # Food
 apple = Food("Apple", 1)
@@ -463,7 +463,7 @@ class Player(object):
 
 
 # Controls
-player = Player(white, [], [], [], [], [], [], [], 10, 10, 10, None, None, None, [None, None, None])
+player = Player(white, [], [], [], [], [], [], [], 10, 10, 10, None, None, None, [])
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'vworp']
@@ -560,15 +560,15 @@ while playing:
                         print("You equipped the %s" % bequip.name)
         # Armor equip
         elif command.lower()[6:] == 'armor':
-        if player.ainventory.count() < 1:
-            print("You have nothing to equip.")
+            if player.ainventory.count() < 1:
+                print("You have nothing to equip.")
         else:
             print(player.ainventory)
             equip_name = input("What would you like to equip? > ")
             for equip in player.ainventory:
                 if equip.name.lower() == equip_name:
-                    aequip[equip.slot] = equip
-                    print("You equipped the %s" % aequip.name)
+                    aequip = equip
+                    print("You equipped the %s" % bequip.name)
     '''        
     # Attack
     elif command.lower()[:7] == 'attack ':
@@ -585,5 +585,5 @@ while playing:
         if target != Merchant:
             print("Will you use a bow or a weapon?")
     '''
-    else:
+else:
         print("Command Not Found")
