@@ -35,6 +35,26 @@ class Arrow(Item):
         self.amount = amount
 
 
+class ElecArrow(Arrow):
+    def __init__(self, name, amount):
+        super(ElecArrow, self).__init__(name, amount)
+
+
+class FireArrow(Arrow):
+    def __init__(self, name, amount):
+        super(FireArrow, self).__init__(name, amount)
+
+
+class IceArrow(Arrow):
+    def __init__(self, name, amount):
+        super(IceArrow, self).__init__(name, amount)
+
+
+class BombArrow(Arrow):
+    def __init__(self, name, amount):
+        super(BombArrow, self).__init__(name, amount)
+
+
 class Food(Item):
     def __init__(self, name, healing):
         super(Food, self).__init__(name)
@@ -131,9 +151,14 @@ class Merchant(Character):
         super(Merchant, self).__init__(name)
         self.stock = stock
 
+# Arrows
+one_arrow = Arrow("Arrow", 1)
+five_arrows = Arrow("Arrow x5", 5)
+ten_arrows = Arrow("Arrow x10", 10)
 
-# Normal items
-arrow = "arrow"
+# Fire arrows
+one_fire_arrow = FireArrow("Fire Arrow x1", 1)
+
 
 # Weapons
 master_sword = Weapon("Master Sword", 40, 30)
@@ -427,16 +452,21 @@ sap_green.east = lemon_yellow
 
 
 class Player(object):
-    def __init__(self, starting_location, winventory, binventory, arinventory, ainventory, finventory, iinventory,
-                 kinventory, wimax, bimax, aimax, wequip, arequip, bequip, aequip):
+    def __init__(self, starting_location, winventory, binventory, ainventory, finventory, iinventory, kinventory,
+                 aramount, baramount, faramount, iaramount, earamount, wimax, bimax, aimax, wequip, arequip, bequip,
+                 aequip):
         self.current_location = starting_location
         self.winventory = winventory
         self.binventory = binventory
-        self.arinventory = arinventory
         self.ainventory = ainventory
         self.finventory = finventory
         self.iinventory = iinventory
         self.kinventory = kinventory
+        self.aramount = aramount
+        self.baramount = baramount
+        self.faramount = faramount
+        self.iaramount = iaramount
+        self.earamount = earamount
         self.wimax = wimax
         self.bimax = bimax
         self.aimax = aimax
@@ -463,7 +493,7 @@ class Player(object):
 
 
 # Controls
-player = Player(white, [], [], [], [], [], [], [], 10, 10, 10, None, None, None, [None, None, None])
+player = Player(white, [], [], [], [], [], [], 0, 0, 0, 0, 0, 10, 10, 10, None, None, None, [None, None, None])
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'vworp']
@@ -503,9 +533,16 @@ while playing:
                     player.current_location.items.remove(item_object)
                     print("You add the %s to your inventory" % item_object.name)
             elif isinstance(item_object, Arrow):
-                player.arinventory.append(item_object)
-                player.current_location.items.remove(item_object)
-                print("You add the %s to your inventory" % item_object.name)
+                if item_object == BombArrow:
+                    player.baramount += item_object.amount
+                elif item_object == IceArrow:
+                    player.iaramount += item_object.amount
+                elif item_object == FireArrow:
+                    player.faramount += item_object.amount
+                elif item_object == ElecArrow:
+                    player.earamount += item_object.amount
+                else:
+                    player.aramount += item_object.amount
             elif isinstance(item_object, Weapon):
                 if player.winventory.count() >= player.wimax:
                     print("Your weapon inventory is full.")
@@ -545,8 +582,8 @@ while playing:
                 equip_name = input("What would you like to equip? > ")
                 for equip in player.winventory:
                     if equip.name.lower() == equip_name:
-                        wequip = equip
-                        print("You equipped the %s" % wequip.name)
+                        player.wequip = equip
+                        print("You equipped the %s" % player.wequip.name)
         # Bow equip
         elif command.lower()[6:] == 'bow':
             if player.binventory.count() < 1:
@@ -556,19 +593,37 @@ while playing:
                 equip_name = input("What would you like to equip? > ")
                 for equip in player.binventory:
                     if equip.name.lower() == equip_name:
-                        bequip = equip
-                        print("You equipped the %s" % bequip.name)
+                        player.bequip = equip
+                        print("You equipped the %s" % player.bequip.name)
         # Armor equip
         elif command.lower()[6:] == 'armor':
-        if player.ainventory.count() < 1:
-            print("You have nothing to equip.")
-        else:
-            print(player.ainventory)
+            if player.ainventory.count() < 1:
+                print("You have nothing to equip.")
+            else:
+                print(player.ainventory)
+                equip_name = input("What would you like to equip? > ")
+                for equip in player.ainventory:
+                    if equip.name.lower() == equip_name:
+                        player.aequip[equip.slot] = equip
+                        print("You equipped the %s" % equip.name)
+        # Arrow equip
+        elif command.lower()[6:] == 'arrow':
+            if player.aramount > 0:
+                print("Arrow x%d" % player.aramount)
+            if player.faramount > 0:
+                print("Fire Arrow x%d" % player.faramount)
+            if player.iaramount > 0:
+                print("Ice Arrow x%d" % player.iaramount)
+            if player.earamount > 0:
+                print("Electric Arrow x%d" % player.earamount)
+            if player.baramount > 0:
+                print("Bomb Arrow x%d" % player.baramount)
+            print(player.binventory)
             equip_name = input("What would you like to equip? > ")
-            for equip in player.ainventory:
+            for equip in player.binventory:
                 if equip.name.lower() == equip_name:
-                    aequip[equip.slot] = equip
-                    print("You equipped the %s" % aequip.name)
+                    player.arequip = equip
+                    print("You equipped the %s" % player.arequip.name)
     '''        
     # Attack
     elif command.lower()[:7] == 'attack ':
