@@ -578,7 +578,8 @@ while playing:
             if player.winventory.count() < 1:
                 print("You have nothing to equip.")
             else:
-                print(player.winventory)
+                for Item in player.winventory:
+                    print(Item)
                 equip_name = input("What would you like to equip? > ")
                 for equip in player.winventory:
                     if equip.name.lower() == equip_name:
@@ -589,7 +590,8 @@ while playing:
             if player.binventory.count() < 1:
                 print("You have nothing to equip.")
             else:
-                print(player.binventory)
+                for Item in player.binventory:
+                    print(Item)
                 equip_name = input("What would you like to equip? > ")
                 for equip in player.binventory:
                     if equip.name.lower() == equip_name:
@@ -600,7 +602,8 @@ while playing:
             if player.ainventory.count() < 1:
                 print("You have nothing to equip.")
             else:
-                print(player.ainventory)
+                for Item in player.ainventory:
+                    print(Item)
                 equip_name = input("What would you like to equip? > ")
                 for equip in player.ainventory:
                     if equip.name.lower() == equip_name:
@@ -618,27 +621,57 @@ while playing:
                 print("Electric Arrow x%d" % player.earamount)
             if player.baramount > 0:
                 print("Bomb Arrow x%d" % player.baramount)
-            print(player.binventory)
-            equip_name = input("What would you like to equip? > ")
-            for equip in player.binventory:
-                if equip.name.lower() == equip_name:
-                    player.arequip = equip
-                    print("You equipped the %s" % player.arequip.name)
-    '''        
+            if (player.aramount + player.faramount + player.iaramount + player.earamount + player.baramount) == 0:
+                print("You don't have any arrows.")
+            else:
+                equip_name = input("What would you like to equip? > ")
+                # Normal arrow equip
+                if equip_name.lower() == 'arrow':
+                    if player.aramount > 0:
+                        player.arequip = player.aramount
+                        print("You equipped the arrows.")
+                    else:
+                        print("You're out of arrows.")
+                # Fire arrow equip
+                if equip_name.lower() == 'fire arrow':
+                    if player.faramount > 0:
+                        player.arequip = player.faramount
+                        print("You equipped the fire arrows.")
+                    else:
+                        print("You're out of fire arrows.")
+                # Ice arrow equip
+                if equip_name.lower() == 'ice arrow':
+                    if player.iaramount > 0:
+                        player.arequip = player.iaramount
+                        print("You equipped the ice arrows.")
+                    else:
+                        print("You're out of ice arrows.")
+                # Electric arrow equip
+                if equip_name.lower() == 'electric arrow':
+                    if player.earamount > 0:
+                        player.arequip = player.earamount
+                        print("You equipped the electric arrows.")
+                    else:
+                        print("You're out of electric arrows.")
+                # Bomb arrow equip
+                if equip_name.lower() == 'bomb arrow':
+                    if player.baramount > 0:
+                        player.arequip = player.baramount
+                        print("You equipped the bomb arrows.")
+                    else:
+                        print("You're out of bomb arrows.")
+                else:
+                    print("Invalid command")
     # Attack
-    elif command.lower()[:7] == 'attack ':
-        name_of_target = command.lower()[7:]
+    elif command.lower()[:6] == 'attack':
         # Search for target
         target = None
-        for character in player.current_location.characters:
-            if character.name.lower() == name_of_target:
-                if character == Merchant:
-                    print("They seem to be no threat, you shouldn't hurt them.")
-                else:
-                    target = character
-        # Choose weapon
-        if target != Merchant:
-            print("Will you use a bow or a weapon?")
-    '''
+        if player.current_location.characters.count() == 0:
+            print("There's no one here.")
+        else:
+            for Character in player.current_location.characters:
+                print(Character)
+            target_name = input("Who will you attack? >_ ")
+
     else:
         print("Command Not Found")
