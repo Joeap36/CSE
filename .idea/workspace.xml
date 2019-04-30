@@ -25,14 +25,27 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/Book1.csv">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="286109" column="16" selection-start-line="286109" selection-end-line="286109" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - Validator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/CSV Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="-51">
+              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -68,6 +81,7 @@
         <option value="$PROJECT_DIR$/notes/Joseph Portela - World Map OOP2.py" />
         <option value="$PROJECT_DIR$/notes/Joseph Portela - World Map OOP.py" />
         <option value="$PROJECT_DIR$/notes/CSV Notes.py" />
+        <option value="$PROJECT_DIR$/notes/Joseph Portela - Validator.py" />
       </list>
     </option>
   </component>
@@ -133,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CSV Notes">
+  <component name="RunManager" selected="Python.Joseph Portela - Validator">
     <configuration name="CSV Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,28 +170,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Joseph Portela - Dictionary World Map" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CSE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes/venv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/venv/Joseph Portela - Dictionary World Map.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Joseph Portela - Hangman (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,6 +184,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Joseph Portela - Hangman.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Joseph Portela - Validator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/Joseph Portela - Validator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,18 +260,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Joseph Portela - Hangman (1)" />
-      <item itemvalue="Python.Joseph Portela - Dictionary World Map" />
       <item itemvalue="Python.Joseph Portela - World Map OOP" />
       <item itemvalue="Python.Joseph Portela - World Map OOP2" />
       <item itemvalue="Python.CSV Notes" />
+      <item itemvalue="Python.Joseph Portela - Validator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Joseph Portela - Validator" />
         <item itemvalue="Python.CSV Notes" />
         <item itemvalue="Python.Joseph Portela - World Map OOP2" />
         <item itemvalue="Python.Joseph Portela - World Map OOP" />
         <item itemvalue="Python.Joseph Portela - Hangman (1)" />
-        <item itemvalue="Python.Joseph Portela - Dictionary World Map" />
       </list>
     </recent_temporary>
   </component>
@@ -272,23 +286,24 @@
       <option name="presentableId" value="Default" />
       <updated>1546882739632</updated>
       <workItem from="1556208166237" duration="2221000" />
-      <workItem from="1556293961437" duration="3279000" />
+      <workItem from="1556293961437" duration="3303000" />
+      <workItem from="1556635785913" duration="6705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5500000" />
+    <option name="totallyTimeSpent" value="12229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44685465" visible="true" weight="0.24253732" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44685465" visible="true" weight="0.24520256" />
       <window_info id="Structure" order="1" sideWeight="0.55314535" side_tool="true" weight="0.23720682" />
       <window_info id="Favorites" order="2" sideWeight="0.5180328" side_tool="true" weight="0.31996974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5092091" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5092091" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -333,6 +348,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CSE$Joseph_Portela___Validator.coverage" NAME="Joseph Portela - Validator Coverage Results" MODIFIED="1556642508898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$CSV_Notes.coverage" NAME="CSV Notes Coverage Results" MODIFIED="1556296806968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
   <component name="editorHistoryManager">
@@ -416,27 +432,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="645" column="61" selection-start-line="645" selection-start-column="61" selection-end-line="645" selection-end-column="61" />
-          <folding>
-            <marker date="1555090575319" expanded="true" signature="535:612" ph="..." />
-            <marker date="1555090575319" expanded="true" signature="635:752" ph="..." />
-            <marker date="1555090575319" expanded="true" signature="770:1352" ph="..." />
-            <marker date="1555090575319" expanded="true" signature="17517:18168" ph="..." />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Book1.csv">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/MyNewFile.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6866827" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Book1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="286109" column="16" selection-start-line="286109" selection-end-line="286109" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes/CSV Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="-51">
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - Validator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
