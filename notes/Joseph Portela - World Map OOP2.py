@@ -449,19 +449,16 @@ sap_green.east = lemon_yellow
 
 
 class Player(object):
-    def __init__(self, starting_location, winventory, binventory, ainventory, finventory, iinventory,
-                 kinventory, aam, faam, iaam, saam, wimax, bimax, aimax, wequip, arequip, bequip, aequip):
+    def __init__(self, starting_location, winventory, binventory, arinventory, ainventory, finventory, iinventory,
+                 kinventory, wimax, bimax, aimax, wequip, arequip, bequip, aequip):
         self.current_location = starting_location
         self.winventory = winventory
         self.binventory = binventory
+        self.arinventory = arinventory
         self.ainventory = ainventory
         self.finventory = finventory
         self.iinventory = iinventory
         self.kinventory = kinventory
-        self.aam = aam
-        self.faam = faam
-        self.iaam = iaam
-        self.saam = saam
         self.wimax = wimax
         self.bimax = bimax
         self.aimax = aimax
@@ -487,7 +484,7 @@ class Player(object):
 
 
 # Controls
-player = Player(white, [], [], [], [], [], [], 0, 0, 0, 0, 10, 10, 10, None, None, None, [])
+player = Player(white, [], [], {}, [], [], [], [], 10, 10, 10, None, None, None, [])
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'vworp']
@@ -525,13 +522,25 @@ while playing:
                     player.current_location.items.remove(item_object)
             elif isinstance(item_object, Arrow):
                 if isinstance(item_object, FireArrow):
-                    player.faam += item_object.amount
+                    try:
+                        player.arinventory['Fire'] += item_object.amount
+                    except KeyError:
+                        player.arinventory['Fire'] = item_object.amount
                 elif isinstance(item_object, IceArrow):
-                    player.iaam += item_object.amount
+                    try:
+                        player.arinventory['Ice'] += item_object.amount
+                    except KeyError:
+                        player.arinventory['Ice'] = item_object.amount
                 elif isinstance(item_object, ShockArrow):
-                    player.saam += item_object.amount
+                    try:
+                        player.arinventory['Shock'] += item_object.amount
+                    except KeyError:
+                        player.arinventory['Shock'] = item_object.amount
                 else:
-                    player.aam += item_object.amount
+                    try:
+                        player.arinventory['Normal'] += item_object.amount
+                    except KeyError:
+                        player.arinventory['Normal'] = item_object.amount
             elif isinstance(item_object, Weapon):
                 if player.winventory.count() >= player.wimax:
                     print("Your weapon inventory is full.")
@@ -553,7 +562,6 @@ while playing:
             else:
                 player.iinventory.append(item_object)
                 player.current_location.items.remove(item_object)
-            print("You add the %s to your inventory" % item_object.name)
         else:
             print("You don't see one")
     # Equip
@@ -593,27 +601,28 @@ while playing:
                         print("You equipped the %s" % aequip.name)
         # Arrow equip
         elif command.lower()[6:] == 'arrows':
-            if player.aam.count() + player.faam.count() + player.iaam.count() + player.saam.count() == 0:
+            if player.arinventory['Normal'] + player.arinventory['Fire'] + player.arinventory['Ice']\
+                    + player.arinventory['Shock'] == 0:
                 print("You have nothing to equip.")
             else:
-                print("%d arrows" % player.aam)
-                print("%d fire arrows" % player.faam)
-                print("%d ice arrows" % player.iaam)
-                print("%d shock arrows" % player.saam)
+                print("%d arrows" % player.arinventory['Normal'])
+                print("%d fire arrows" % player.arinventory['Fire'])
+                print("%d ice arrows" % player.arinventory['Ice'])
+                print("%d shock arrows" % player.arinventory['Shock'])
                 equip_name = input("What would you like to equip? > ")
                 if equip_name.lower() == 'arrows':
-                    if player.aam != 0:
-                        player.arequip = player.aam
+                    if player.arinventory['Normal'] != 0:
+                        player.arequip = player.arinventory['Normal']
                     else:
                         print("You're out of those.")
                 elif equip_name.lower() == 'fire arrows':
-                    if player.faam != 0:
-                        player.arequip = player.faam
+                    if player.arinventory['Fire'] != 0:
+                        player.arequip = player.arinventory['Fire']
                     else:
                         print("You're out of those.")
                 elif equip_name.lower() == 'ice arrows':
-                    if player.iaam != 0:
-                        player.arequip = player.iaam
+                    if player.arinventory['Ice'] != 0:
+                        player.arequip = player.arinventory['Ice']
                     else:
                         print("You're out of those.")
                 elif equip_name.lower() == 'shock arrows':

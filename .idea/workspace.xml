@@ -26,8 +26,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - World Map OOP2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="555" column="72" selection-start-line="555" selection-start-column="72" selection-end-line="555" selection-end-column="72" />
+            <state relative-caret-position="569">
+              <caret line="624" column="66" selection-start-line="624" selection-start-column="66" selection-end-line="624" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - Dictionary Notes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1221">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
@@ -286,18 +295,19 @@
       <workItem from="1558022048528" duration="1599000" />
       <workItem from="1558043043064" duration="3645000" />
       <workItem from="1558453876587" duration="2990000" />
-      <workItem from="1558625523612" duration="4379000" />
+      <workItem from="1558625523612" duration="4417000" />
+      <workItem from="1558638298437" duration="1150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52632000" />
+    <option name="totallyTimeSpent" value="53820000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44637054" visible="true" weight="0.17270789" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.44637054" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="1" sideWeight="0.55362946" side_tool="true" weight="0.26599148" />
       <window_info id="Favorites" order="2" sideWeight="0.5180328" side_tool="true" weight="0.31996974" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -462,13 +472,6 @@
     <entry file="file://$USER_HOME$/Downloads/echo (1)">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - Dictionary Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - Sales Records2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -483,10 +486,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - Dictionary Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1221">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes/Joseph Portela - World Map OOP2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="555" column="72" selection-start-line="555" selection-start-column="72" selection-end-line="555" selection-end-column="72" />
+        <state relative-caret-position="569">
+          <caret line="624" column="66" selection-start-line="624" selection-start-column="66" selection-end-line="624" selection-end-column="66" />
         </state>
       </provider>
     </entry>
